@@ -1,9 +1,9 @@
 {
-    "name": "bloc-jams",
+    "name": "migs-portfolio",
     "preferGlobal": true,
     "version": "0.0.1",
     "author": "migs",
-    "description": "bloc front end",
+    "description": "portfolio",
     "license": "MIT",
     "engines": {
         "node": ">=0.10"
@@ -12,7 +12,7 @@
         "start": "node server.js"
     },
     "dependencies": {
-        "express": "latest",
+        "express": "latest"
         
     }
 }
