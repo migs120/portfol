@@ -44,48 +44,60 @@ var bloccitProject ={
 		"Implementation of Database modeling for create, read, update, and delete",
 		"implementation of AWS cloud Services"
 		],
-	pics:['/assets/images/bloccit/bloccit-formsCRUD.gif','/assets/images/bloccit/bloccitcontrols.gif','/assets/images/bloccit/bloccitHome.gif']
-
+	//pics:['/assets/images/bloccit/bloccit-formsCRUD.gif','/assets/images/bloccit/bloccitcontrols.gif','/assets/images/bloccit/bloccitHome.gif']
+    pics:['/assets/images/bloccit/bloccitHome.gif','/assets/images/bloccit/bloccit-formsCRUD.gif','/assets/images/bloccit/bloccitcontrols.gif']
 	}
 
 var blocmetricsProject = {
 	title:"Blocmetrics",
 	description:[
 		"API Tacking system",
-		"Graphing "
+		"Visitors Time Graphing "
 		
 		],
-	pics:['/assets/images/blocmetric/blocmetricgraph.gif','/assets/images/blocmetric/blocmetrichome.gif']
-	
+	//pics:['/assets/images/blocmetric/blocmetricgraph.gif','/assets/images/blocmetric/blocmetrichome.gif']
+	pics:['/assets/images/blocmetric/blocmetrichome.gif','/assets/images/blocmetric/blocmetricgraph.gif']
 }
-
-
 
 
 </script>
 <body style="background-color:lightgrey;">
     
-    
+<!--    A wrapper around elements you don't want to touch side of screen with properties like width: 90%; max-width: 1200px;-->
     
 <!-- nav bar   
-    --><!-- should have contact tab and some logo-->
-<div class="seebox col-12" style="height:120px;" >
+    --><!-- should have contact tab and some logo and about me and projects-->
+<div class="seebox col-12" style="height:70px;" >
     <div class="seebox col-2 vhcenterp" style="height:100%; float:right;">
-        <h3 class="removempb vhcenters" style="font-size:;">contact</h3>
+        <h3 class="removempb vhcenters" style="font-size:2em;">contact</h3>
         </div>
     <div class="seebox col-2" style="height:100%;">
         
         </div>
 
     </div> 
-    
+<!--space div \|/   -->
+<div class="seebox col-12" style="height:60px;"></div>   
         
 <!-- attention catcher heading   
-    --> <!-- notes:should be pic rotator,should display my sites highlights -->
-<div class="seebox col-12 height vhcenterp" id="RoterAttenCatcher">
+    --> <!-- notes:should be pic rotator,should display my sites highlights,buttons should hide except when hover -->
+<div class="seebox col-12 height vhcenterp" >
+    <div class="vhcenters col-10" style="height:100%;" >
+        <div id="RoterAttenCatcher" class="col-12" style="height:100%; position:absolute;">
+        <img src="/assets/images/display/coffeecup.gif" class=" col-12"  style="height:100%; position:absolute;"></img>
+        </div>
+    
+        <div class="seebox col-1 " style="z-index:2; float:right; position:relative; height:100%; ">
+            <p class="vhcenters removempb" style="color:grey; font-size:4em; cursor:pointer;" onclick="roterbuttonFoward()"><b>></b></p></div>
+    
+        <div class="col-1 seebox " style="z-index:2;  position:relative; height:100%; float:left;">
+            <p class="vhcenters removempb" style="color:grey; font-size:4em; cursor:pointer;" onclick="roterbuttonBack()"><b><</b></p></div>
+        
+        
+    
 
-     
-    <img src="/assets/images/display/coffeecup.gif" class="vhcenters col-8" style="height:100%;">
+        
+            </div>
     
     </div>
     
@@ -135,6 +147,7 @@ var blocmetricsProject = {
  */
 
 var imageList = [];
+var captionList = [];
 for(var i = 0; i< bloccitProject.pics.length; i++){imageList.push(bloccitProject.pics[i]) };
 for(var i = 0; i< blocmetricsProject.pics.length; i++){imageList.push(blocmetricsProject.pics[i]) };
     
@@ -142,8 +155,16 @@ var currentImage = 0;
 
 var setImage = function(){};
 var roterAttenCatcher = $("#RoterAttenCatcher"); //must be in bottom of html to read element selection
-var roterAttenTemplate = function(){return "<img src='"+imageList[currentImage]+"' class='vhcenters col-12' style='height:100%;' > ";}
+var roterAttenTemplate = function(){return "<img src='"+imageList[currentImage]+"' class='vhcenters col-12' style='height:100%; position:absolute;' > ";}
+var roterbuttonFoward = function(){
+        if(currentImage <= imageList.length-2)
+        {currentImage++; roterAttenCatcher.html(roterAttenTemplate())}
+        else{currentImage = 0; roterAttenCatcher.html(roterAttenTemplate()) } };
 
+var roterbuttonBack = function(){
+        if(!currentImage == 0)
+        {currentImage--; roterAttenCatcher.html(roterAttenTemplate())}
+        else{currentImage = imageList.length-1; roterAttenCatcher.html(roterAttenTemplate()) } };
 
 
 </script>
@@ -171,7 +192,18 @@ var roterAttenTemplate = function(){return "<img src='"+imageList[currentImage]+
 <div>
 
         
-</div>     
+</div>   
+
+
+
+var roterbuttenFoward = function(){
+        if(currentImage <= imageList.length-1)
+{currentImage++; roterAttenCatcher.html(roterAttenTemplate())}
+else{currentImage = 0; roterAttenCatcher.html(roterAttenTemplate()) } }; roterbuttenFoward();
+
+
+
+
       
 -->     
         
