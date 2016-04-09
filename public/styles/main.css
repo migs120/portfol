@@ -110,7 +110,11 @@ html {
  .removempb{padding:0px; margin:0px; border-width:0px;}
 
 
-
+body{
+    
+    background-color:#f2f2f2; font-size:100%;
+    
+    }
 
 
 
