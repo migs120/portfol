@@ -1,153 +1,106 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Migs Portfold</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
-    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-<!--     <link rel="stylesheet" type="text/css" href="styles/normalize.css" >
-    <link rel="stylesheet" type="text/css" href="styles/main.css" > -->
-   
+
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+
+
 </head>
-<script> 
-    
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// assets/scripts/pojects.js objects
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
-var bloccitProject ={
-	title: "Bloccit",
-	descriptions: [
-		"Bloccit is a site I build to learn back end web development Fundamentals",
-		"Implementation of Database modeling for create, read, update, and delete",
-		"implementation of AWS cloud Services"
-		],
-    pics:['/assets/images/bloccit/bloccitHome.gif','/assets/images/bloccit/bloccit-formsCRUD.gif','/assets/images/bloccit/bloccitcontrols.gif']
-	}
 
-var blocmetricsProject = {
-	title:"Blocmetrics",
-	descriptions:[
-		"API Tacking system",
-		"Visitors Time Graphing "
-		
-		],
-	pics:['/assets/images/blocmetric/blocmetrichome.gif','/assets/images/blocmetric/blocmetricgraph.gif']
-}
+<body style="background-color:#f2f2f2; font-size:100%; " >
+    
+ <div class="col-body seebox vhcenters " style=" height:100%;margin-right:auto; margin-left:auto;" >
 
-var resume = {
-    name:"Hi, I'm Miguel",
-    objective:"Web applications developer with a Background in Rails, Node, PHP, Javascript, CSS, and HTML5, I can work on the frontend and backend of a web application and eager to learn other languages and stacks as well!",
-    
-    qualities:"I believe in adding to the wheel not reinventing it, lets move forward not backward, Learning the newest languages is the only  smart thing to do, though it  may get frustrating at times I understand patience is the tool for focusing and understanding the details of the puzzle. I work hard on learning what others think is too hard and research everything I think will help be productive in the development world. I don’t just code for a job, I push to be a fierce competitor in the programming world. All I got to say to the world is ‘look out world, I’m coming!!’. ",
-    
-    experience:"Two years in Web Development and Training.<br> Two years ago I started out with building simple html pages just for fun, then got really interested in php, so I did various works on php and sql, felt like I wasnt getting the whole picture so I enrolled in Bloc.io to become a fullstack web developer",
-    
-    education:"Blocs' FullStack Web Developer Training"
-        }
+    <!--    A wrapper around elements you don't want to touch side of screen with properties like width: 90%; max-width: 1200px;-->
 
-// inner div height and width 100% inside project box
-// text in that div to be text-align center and horizontaly centered with flex-box
-
-// careful of indentation
-// html things are named like-this not likeThis
-// move inline-css to external and JS to external
-
-// JS move any executing code that touches/selects the DOM to the document.ready
-// Fix indentations and clean up/refactor code a tiny bit
-</script>
-    
- 
-    
-    
-<body style="background-color:#f2f2f2; font-size:100%;">
-    
-<!--    A wrapper around elements you don't want to touch side of screen with properties like width: 90%; max-width: 1200px;-->
-    
-<!-- nav bar   
-    --><!-- should have contact tab and some logo and about me and projects-->
-<div class="seebox col-12" style="height:70px;" >
-    <div class="seebox col-3 vhcenterp" id="contactdiv" style="height:100%; float:right;">    
-        <h3 class="removempb vhcenters" id="contactemail" style="font-size:2em;">contact</h3>
+    <!-- nav bar   
+    -->
+    <!-- should have contact tab and some logo and about me and projects-->
+    <div class="seebox col-12" style="height:70px;">
+        <div class="seebox col-3 vhcenterp" id="contactdiv" style="height:100%; float:right;">
+            <h3 class="removempb vhcenters" id="contactemail" style="font-size:2em;">contact</h3>
         </div>
-    <div class="seebox col-4 " style="position:relative; height:100%;">
-<!--        <h2 class=" removempb" style="font-size:2em; position:absolute; top:50%; transform:translate(0,-50%);">Miguel Gutierrez<h2>-->
-        <img src="/assets/images/display/migLogo.png">
+        <div class="seebox col-4 " style="position:relative; height:100%;">
+            <img src="/assets/images/display/migLogo.png">
         </div>
 
-</div>
-        
-        
-<!--selffee intro-->
-<div class="seebox col-12 height vhcenterp" style="background-color:black;"  >
- <img src="/assets/images/display/coffeecup.gif" class="col-6 vhcenters" style="height:100%; ">      
-<div class="col-6 ">
-    <h1 class="" style="z-index:1;  color:white;position: absolute;top: 50%;transform: translate(0, -50%);">Hi, I'm Miguel</h1>
-</div>  
-</div>        
-        
-<!--space div \|/   -->
-    <div class="seebox col-12" style="height:30px;">
-     
-        </div>         
-        
-        
-<!--objective-->
-<div class="seebox col-12 " id="objective"
-     style="height:200px; position:relative;font-style: italic; " >
- 
-</div>        
-        
-        
-<!--space div \|/   -->
-    <div class="seebox col-12" style="height:60px;">
-     
-        </div>  
-        
-<!-- attention catcher heading   
-    --> <!-- notes:should be pic rotator,should display my sites highlights,buttons should hide except when hover -->
-<div class="seebox col-12 height vhcenterp" 
-     style="background-image:url('/assets/images/display/matrix.gif');" >
-    <div class="vhcenters col-10" id="ParentAttenCatcher"  style="height:80%;" >
-        <div id="RoterAttenCatcher" class="col-12" style="height:100%; position:absolute;">
-        <img src="/assets/images/display/myworks.gif" class=" col-12"  style="height:100%; position:absolute;"></img>
-        </div>
-    
-        <div class="seebox col-1 " style="z-index:2; float:right; position:relative; height:100%; ">
-            <p class="vhcenters removempb" id="arrow"
-               style="color:grey; font-size:4em; display:none; cursor:pointer;" 
-               onclick="roterbuttonFoward()"><b> > </b></p></div>
-    
-       <!--caption div \|/   -->
-    <div class="seebox col-10 " style="height:100%; float:right; position:relative; z-index:2;">
-        <p class="vhcenters removempb" id="caption" style="background-color:white; display:none; font-size:1.34em;"></p>
-        </div> 
-    
-        <div class="col-1 seebox " style="z-index:2;  position:relative; height:100%; float:left;">
-            <p class="vhcenters removempb" id="arrow" 
-               style="color:grey; display:none; font-size:4em; cursor:pointer;" 
-               onclick="roterbuttonBack()"><b> < </b></p></div>
-        
-        
- 
-
-        
-            </div>
-    
     </div>
-    
-<!--    space-->
-<div class="seebox col-12" style="height:60px;"></div>
-    
-    
-<!--main body  
-    --> <!-- should hold a galerry of created sites-->
-<div id="siteGalerry"> 
-    
-    <!--loopping div \|/ -->
-<!--
+
+
+    <!--selffee intro-->
+    <div class="seebox col-12 height vhcenterp" style="background-color:black;">
+        <img src="/assets/images/display/coffeecup.gif" class="col-6 vhcenters" style="height:100%; ">
+        <div class="col-6 ">
+            <h1 class="" style="z-index:1;  color:white;position: absolute;top: 50%;transform: translate(0, -50%);">Hi, I'm Miguel</h1>
+        </div>
+    </div>
+
+    <!--space div \|/   -->
+    <div class="seebox col-12" style="height:30px;">
+
+    </div>
+
+
+    <!--objective-->
+    <div class="seebox col-12 " id="objective" style="height:200px; position:relative;font-style: italic; ">
+
+    </div>
+
+
+    <!--space div \|/   -->
+    <div class="seebox col-12" style="height:60px;">
+
+    </div>
+
+    <!-- attention catcher heading   
+    -->
+    <!-- notes:should be pic rotator,should display my sites highlights,buttons should hide except when hover -->
+    <div class="seebox col-12 height vhcenterp" style="background-image:url('/assets/images/display/matrix.gif');">
+        <div class="vhcenters col-10" id="ParentAttenCatcher" style="height:80%;">
+            <div id="RoterAttenCatcher" class="col-12" style="height:100%; position:absolute;">
+                <img src="/assets/images/display/myworks.gif" class=" col-12" style="height:100%; position:absolute;"></img>
+            </div>
+
+            <div class="seebox col-1 " style="z-index:2; float:right; position:relative; height:100%; ">
+                <p class="vhcenters removempb" id="arrow" style="color:grey; font-size:4em; display:none; cursor:pointer;" onclick="roterbuttonFoward()"><b> > </b></p>
+            </div>
+
+            <!--caption div \|/   -->
+            <div class="seebox col-10 " style="height:100%; float:right; position:relative; z-index:2;">
+                <p class="vhcenters removempb" id="caption" style="background-color:white; display:none; font-size:1.34em;"></p>
+            </div>
+
+            <div class="col-1 seebox " style="z-index:2;  position:relative; height:100%; float:left;">
+                <p class="vhcenters removempb" id="arrow" style="color:grey; display:none; font-size:4em; cursor:pointer;" onclick="roterbuttonBack()"><b> < </b></p>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <!--    space-->
+    <div class="seebox col-12" style="height:60px;"></div>
+
+
+    <!--main body  
+    -->
+    <!-- should hold a galerry of created sites-->
+    <div id="siteGalerry">
+
+        <!--loopping div \|/ -->
+        <!--
 <div class='seebox col-6 height vhcenterp'  >
     
     <div class='col-12 vhcenterp'  style='height:100%;'>
@@ -167,163 +120,28 @@ var resume = {
 -->
 
 
-</div>  
-
-        
-        
-<footer class="seebox col-12" style="clear:both; height:150px;">
-       
-    <h1>footer</h1>
-        
-    </footer>     
-        
-        
-        
-        
-<!--http://localhost:3000/-->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
- 
-        
-<script>
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// assets/scripts/main.js 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    /*image rotor div should rotate objects
-    should have function that sets the object
-        as call setImage([image1])
-   image should have back and foward buttons 
-        and on click should call setImage([rotateImageList])
-    rotateImageList should have a currentImage on var
-    list should be an array of imageObject variables
- 
- */
-
-var imageList = [];
-var captionList = [];
-for(var i = 0; i< bloccitProject.pics.length; i++){imageList.push(bloccitProject.pics[i]); captionList.push(bloccitProject.descriptions[i]); };
-for(var i = 0; i< blocmetricsProject.pics.length; i++){imageList.push(blocmetricsProject.pics[i]); captionList.push(blocmetricsProject.descriptions[i]); };
-    
-var currentImage = 0;
-var currentCaption = 0;
-
-var roterAttenCatcher = $("#RoterAttenCatcher"); //must be in bottom of html to read element selection
-var caption = $("#caption");
-var galerryDiv = $("#siteGalerry");
-    
-var roterAttenTemplate = function() {
-    return "<img src='"+imageList[currentImage]+"' class='vhcenters col-12' style='height:100%; position:absolute; opacity:0.9;' > ";
-        }
-var objectiveTemplate = function(){
-    return "<p class=' removempb seebox' style='margin:0px;  font-size:2em; position: absolute; top:50%;transform: translate(0, -50%); '>"+resume.objective+"</p>";
-        }
-var captionTemplate = function(){return "<b>"+captionList[currentCaption]+"</b>"}
+    </div>
 
 
-var roterbuttonFoward = function(){
-        if(currentImage <= imageList.length-2)
-        {currentImage++; currentCaption++; roterAttenCatcher.html(roterAttenTemplate()); caption.html(captionTemplate) }
-        else{currentImage = 0; currentCaption = 0; roterAttenCatcher.html(roterAttenTemplate()); caption.html(captionTemplate); } };
 
-var roterbuttonBack = function(){
-        if(!currentImage == 0) {
-            currentImage--; currentCaption--; roterAttenCatcher.html(roterAttenTemplate()); caption.html(captionTemplate);
-        }
-        else{currentImage = imageList.length-1;
-             currentCaption = captionList.length-1;
-             roterAttenCatcher.html(roterAttenTemplate()); caption.html(captionTemplate); 
-            } 
-};
-        
-for(var i = 0; i< imageList.length; i++){
-    
-    var galerryTemplate = function(){ 
-            
-return "<div class='seebox col-6 height vhcenterp'  >"
-   + "<div class='col-12 vhcenterp'  style='height:100%;'>"
-    +"<div class='seebox col-11 vhcenters' "
-    +  "style='height:70%; background-color:grey; position:absolute; opacity:0.8; z-index:2; display:none;' id='galerryCaptionBox'>"
-    + "<p class='vhcenters removempb'"
-    +" style='color:white; font-size:2em; text-align:center;'>"
-    +captionList[i]
-    +"</p></div></div>"
-    +"<div class='seebox col-10 vhcenters' id='galerryCaption' style='height:80%; z-index:1;'>"
-    +"<img src='"+imageList[i]+"' class=' col-12 '  style='height:100%; '></img>"
-    +"</div> </div> "           
+    <footer class="seebox col-12" style="clear:both; height:150px;">
 
-                }
-    
+<!--        <h1>footer</h1>-->
 
-    galerryDiv.append(galerryTemplate);
+    </footer>
 
-    }
-    
-    
-var qualitiesTemplate = function(){ 
-        return "<div class='col-12 seebox  vhcenterp' style='height:600px; background-image:url("+"/assets/images/display/maxre.jpg"
-        +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:2.2em; text-align:center; margin:5px; z-index:2;'>"
-        +resume.qualities
-        +"</p></div>";
-   
-                                      }
 
-var experienceTemplate = function(){
-    
-    return  "<div class='col-12 seebox  vhcenterp' style='height:600px; background-image:url("+"/assets/images/display/notespic.jpg"
-        +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:2.2em; text-align:center; margin:5px; z-index:2;'>"
-        +resume.experience
-        +"</p></div>";
-  
-    
-}
 
-var contact = {
-    
-    contactdisplay:"<h3 class='removempb seebox vhcenters'  style='font-size:2em;'>contact</h3>",
-    contacthover:"<h3 class='removempb seebox vhcenters'  style='font-size:2em;'>Migs@miggymigs.com</h3>"
-}
-    
-$(document).ready(function(){
-    $("#ParentAttenCatcher").hover(
-                                    function(){$("*#arrow, #caption").show()},
-                                    /*callback->*/function(){$("*#arrow, #caption").hide()}
-                                  )
-    $("*#galerryCaption, *#galerryCaptionBox").hover(
-                                function(){$(this).parent().find("#galerryCaptionBox").show()}
-                                ,function(){$(this).parent().find("#galerryCaptionBox").hide()}
-                            );
-    
-    $("#contactdiv, #contactdiv h3").hover(
-                            function(){  $("#contactdiv").html(contact.contacthover); console.log("hover")}
-                            ,function(){  $("#contactdiv").html(contact.contactdisplay); console.log("display")}
-                            );
-    
-    $("#objective").html(objectiveTemplate);
-    
-    //qualitys
-    $(qualitiesTemplate()).insertAfter($("#siteGalerry").children()[1]);
-    
-    $(experienceTemplate()).insertAfter($("#siteGalerry").children()[4]);
-    
-});
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/main.js"></script>
     
     
+    <div/>
 
-    
-</script>
-       
     <body/>
 
-<html/>
+    <html/>
         
    
         
