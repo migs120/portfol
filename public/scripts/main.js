@@ -59,7 +59,7 @@ return "<div class='seebox col-6 height vhcenterp'  >"
     
     
 var qualitiesTemplate = function(){ 
-        return "<div class='col-12 seebox  vhcenterp' style='height:600px; background-image:url("+"/assets/images/display/maxre.jpg"
+        return "<div class='col-12 seebox  vhcenterp' style='height:700px; background-image:url("+"/assets/images/display/maxre.jpg"
         +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:2.2em; text-align:center; margin:5px; z-index:2;'>"
         +resume.qualities
         +"</p></div>";
