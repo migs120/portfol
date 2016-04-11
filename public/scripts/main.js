@@ -14,7 +14,7 @@ var roterAttenTemplate = function() {
     return "<img src='"+imageList[currentImage]+"' class='vhcenters col-12' style='height:100%; position:absolute; opacity:0.9;' > ";
         }
 var objectiveTemplate = function(){
-    return "<p class=' removempb seebox' style='margin:0px;  font-size:4.5vmax; position: absolute; top:50%;transform: translate(0, -50%); '>"+resume.objective+"</p>";
+    return "<p class=' removempb seebox' style='margin:0px;  font-size:4.5vh; position: absolute; top:50%;transform: translate(0, -50%); '>"+resume.objective+"</p>";
         }
 var captionTemplate = function(){return "<b>"+captionList[currentCaption]+"</b>"}
 
@@ -61,7 +61,7 @@ return "<div class='seebox col-6 height vhcenterp'  >"
 
 var qualitiesTemplate = function(){ 
         return "<div class='col-12 seebox  vhcenterp' style='font-size:2.2em; height:700px; background-image:url("+"/assets/images/display/maxre.jpg"
-        +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:4.5vmax; text-align:center; margin:5px; z-index:2;'>"
+        +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:4.5vh; text-align:center; margin:5px; z-index:2;'>"
         +resume.qualities
         +"</p></div>";
    
@@ -78,7 +78,7 @@ var qualitiesTemplate = function(){
 var experienceTemplate = function(){
     
     return  "<div class='col-12 seebox  vhcenterp' style='height:600px; background-image:url("+"/assets/images/display/notespic.jpg"
-        +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:4.5vmax; text-align:center; margin:5px; z-index:2;'>"
+        +");'><p class='vhcenters col-10' style='background-color:white; opacity:0.8;  font-size:4.5vh; text-align:center; margin:5px; z-index:2;'>"
         +resume.experience
         +"</p></div>";
   
