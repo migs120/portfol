@@ -24,7 +24,7 @@ var resume = {
     
     qualities:"I believe in adding to the wheel not reinventing it, let's move forward not backward, Learning the newest languages is the only smart thing to do, though it may get frustrating at times I understand patience is the tool for focusing and understanding the details of the puzzle. I work hard on learning what others think is too hard and research everything I think will help be productive in the development world. I don't just code for a job, I push to be a fierce competitor in the programming world. All I have to say to the world is ‘look out world, I'm coming!!'. ",
     
-    experience:"Two years in Web Development and Training.<br> Two years ago I started out with building simple html pages just for fun, then got really interested in php, so I did various works on php and sql, felt like I wasnt getting the whole picture so I enrolled in Bloc.io to become a fullstack web developer",
+    experience:"Five years in Web Development.<br> Five years ago I started out with building simple html pages just for fun, then got really interested in php, so I did various works on php and sql, felt like I wasnt getting the whole picture so I enrolled in Bloc.io to become a fullstack web developer",
     
     education:"Blocs' FullStack Web Developer Training"
         }
